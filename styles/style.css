@@ -369,7 +369,10 @@ input:hover{
 	   border:2px solid #27ae60;
 }
 #messenger{
-	
+	text-align: center;
+	width: 350px;
+	overflow:hidden;
+	word-wrap: break-word;
 	margin:5px;
 	font-size:20px;
 	color:red;

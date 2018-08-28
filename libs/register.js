@@ -41,6 +41,7 @@ $(document).ready(()=>{
                         	if((!isGoodlogin(loginABC))&&($("#login").val())){ //!!!!!!!! СДЕЛАТЬ СО SWITCH1!!!!!!
                             	$('#login').css('border', 'red 2px solid');	
                             		error=3;
+                             
                             }
 							if(!$(this).val()){// если в поле пустое
                             $(this).css('border', 'red 2px solid');// устанавливаем рамку красного цвета
