@@ -501,7 +501,7 @@ input:hover{
 	 border-radius: 3px;
 	 margin-bottom: 10px;
 	 font-size: 25px;
-
+	 cursor: pointer;
 	
 }
 #subFilters:hover{
@@ -874,6 +874,25 @@ select{
 
 }
 .categotyChanger button:hover{
+	cursor: pointer;
+	background-color: #e1e1e1;
+}
+.categotyChanger1{
+	
+	width:900px;
+	margin-left:158px;
+	text-align: center;
+}
+.categotyChanger1 button{
+	padding: 5px 100px 5px 100px;
+	background-color: #ffffff;
+	border:1px solid black;
+	color: black;
+	margin:0px;
+
+
+}
+.categotyChanger1 button:hover{
 	cursor: pointer;
 	background-color: #e1e1e1;
 }
