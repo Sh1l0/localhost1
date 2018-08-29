@@ -19,5 +19,21 @@
 		<input type="text" name="search2" placeholder="Испарятор 3000"style="box-shadow:  3px 5px 10px grey inset; border: 0px;">
 		<input type="submit" name="search2"  value="Найти" id="searchButton2">
 	</form></div>
+	
+	<div id='coolPubs'>
+		<div>
+			<img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916">
+		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span></div>
+		 <div>
+			<img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916">
+		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span></div>
+		 <div>
+			<img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916">
+		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span></div>
+		 <div>
+			<img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916">
+		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span></div>
+		
+	</div>
 	</div>
 </body>
