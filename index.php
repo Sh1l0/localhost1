@@ -1,9 +1,11 @@
 <?php 
 session_start();
-if($_GET["photo"] == 1)
+/*if(isset($_FILES['userfile']['size']))
 {
-    echo "fuck";
+header('Content-Type: image/jpeg');
+include "parts/PostPhotoSCR.php";
 }
+*/
 if($ind==0)
 {
 ?>
