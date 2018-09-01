@@ -1,6 +1,11 @@
+@font-face {
+	font-family:Gotham Pro Light;
+	src: url('../styles/GothaProLig.otf') format("opentype"); 
+	font-weight: normal;
+	font-style: normal;
+}
 body{
-	font-family: 'comic sans MS';
-	font-weight: bold;
+	font-family:Gotham Pro Light;
 	background-image: url('../img/back.jpg');
 	background-attachment: fixed;
 	background-color: #222222;
