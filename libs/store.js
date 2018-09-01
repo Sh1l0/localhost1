@@ -1,9 +1,9 @@
 $(document).ready(()=>{
 $('.filter').on('mouseenter', ()=>{
-	$('.filter').animate({backgroundColor: '#ffb94b'}, 200);
+	$('.filter').animate({backgroundColor: '#353535'}, 200);
 });
 $('.filter').on('mouseleave', ()=>{
-	$('.filter').animate({backgroundColor: '#f39c12'}, 200);
+	$('.filter').animate({backgroundColor: '#252525'}, 200);
 });
 $('.filter').on('click', event => {
 
