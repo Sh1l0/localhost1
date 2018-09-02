@@ -3,21 +3,25 @@ $(document).ready(()=>{
  
 
 $(".nav-panel div").on('mouseenter', event =>{
-		$(event.currentTarget).animate({backgroundColor: '#202020'}, 150)
+		$(event.currentTarget).css({backgroundColor: '#303030'})
 		
 	});
 
 $(".nav-panel div").on('mouseleave', event =>{
 	
-		$(event.currentTarget).animate({backgroundColor: '#000000'}, 150);	
+		$(event.currentTarget).css({backgroundColor: '#252525'});	
 	
 
 });
 
 $("#log").on('click', ()=>{
-	$("#log").css({backgroundColor: '#202020'});
-	$('.login').slideToggle(300);
+
+	$('.login').slideDown(300);
 
 });
+$(".loginButton").on("click", ()=>{
+	$('.login').slideUp(200);
+});
 
+	
 })
