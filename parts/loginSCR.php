@@ -4,8 +4,8 @@ function verifySignUp($data)
 if(isset($data['do_login']))
 {
 include_once "libs/rb.php";//подключаем rb.php
-require_once "setting.php";//подключаем файл с настройками setting.php
-require_once "db.php";// коннект ту датабейз 
+include_once "setting.php";//подключаем файл с настройками setting.php
+include_once "db.php";// коннект ту датабейз 
 $errors = array();
 $user = R::findOne('users', 'login = ?', array($data['login']));
 if($user)

@@ -1,5 +1,5 @@
 <?php
-require_once '/parts/loginSCR.php';
+include_once 'parts/loginSCR.php';
 $data=$_POST;
 if(isset($data['do_login']))
 {
