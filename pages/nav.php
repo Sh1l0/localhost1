@@ -28,11 +28,15 @@ verifySignUp($data);
     }
     else{
        
-?><div id ="log"> Авторизироваться</div>
+?><div id ="log""> Авторизироваться</div>
 
 </div>
 <ul>
+   
   <form name="login" method="post" class = "login" action="">
+ <li class="loginButton">
+      <div >Авторизироваться</div>
+    </li>
   <li>Логин:
    <input type="text" size="20" name="login" style="margin-left: 12px" placeholder="Nagibator2005">
   </li>

@@ -16,8 +16,11 @@ $(".nav-panel div").on('mouseleave', event =>{
 
 $("#log").on('click', ()=>{
 
-	$('.login').slideToggle(300);
+	$('.login').slideDown(300);
 
+});
+$(".loginButton").on("click", ()=>{
+	$('.login').slideUp(200);
 });
 
 	

@@ -7,6 +7,9 @@ $(document).ready(()=>{
 		$('.oB').fadeIn(200);
 		$('.Pubs').fadeOut(200);
 		$('.liked').fadeOut(200);
+		$("#oB").css({backgroundColor:"#e24f43"});
+		$("#publications").css({backgroundColor:"#252525"});
+		$("#liked").css({backgroundColor:"#252525"});
 
 		
 	});
@@ -14,11 +17,17 @@ $(document).ready(()=>{
 			$('.Pubs').fadeIn(200);
 			$('.oB').fadeOut(200);
 			$('.liked').fadeOut(200);
+			$("#oB").css({backgroundColor:"#252525"});
+			$("#publications").css({backgroundColor:"#e24f43"});
+		$("#liked").css({backgroundColor:"#252525"});
 	});
 		$('#liked').on('click', event =>{
 			$('.liked').fadeIn(200);
 			$('.oB').fadeOut(200);
 			$('.Pubs').fadeOut(200);
+			$("#oB").css({backgroundColor:"#252525"});
+			$("#publications").css({backgroundColor:"#252525"});
+			$("#liked").css({backgroundColor:"#e24f43"});
 	});
 		$('.changePhoto').on('click', ()=>{
 			$('.flown').fadeIn(200);
