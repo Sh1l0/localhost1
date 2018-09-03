@@ -7,6 +7,7 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^libs/(.*)$ libs/$1 [L]
 RewriteRule ^styles/(.*)$ styles/$1 [L]
 RewriteRule ^PhotoNews/(.*)$ PhotoNews/$1 [L]
+RewriteRule ^POSTPHOTO/(.*)$ POSTPHOTO/$1 [L]
 RewriteRule ^img/(.*)$ img/$1 [L]
 RewriteRule ^.*$ [NC,L]
 RewriteRule ^.*$ index.php [NC,L]

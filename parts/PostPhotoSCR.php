@@ -13,48 +13,74 @@ if($_FILES['userfile']['size']<400000 && $_FILES['userfile']['size']!=0)
 	if ($_FILES['userfile']['type'] == "image/jpeg" )
 	{
 		    list($width, $height) = getimagesize($_FILES['userfile']['tmp_name']);//получаем ширину и высоту файла
-            $img200 = imagecreatetruecolor(SMALL_width,SMALL_height);
+            $imgRES = imagecreatetruecolor(SMALL_width,SMALL_height);
             $imgPOST = imagecreatefromjpeg($_FILES['userfile']['tmp_name']);
             $interest = 1;
-            if ( $width > SMALL_width)
+            if ( $height > $width )
+            	{
+            	if ( $height > 260 )
+            		{             	
+            		$interest = (SMALL_width * 100) / $width; // находим процент сжатия картинки если она шире
+            	    $widthRESIZE = (int)(($width / 100) * $interest) ; // находим новые размеры и приводим их в инт (ширина)
+                    $heightRESIZE = (int)(($height / 100) * $interest);// находим новые размеры и приводим их в инт (высота) 
+                    } 
+                if ( $height < 260 )
+                	{
+                	$interest =  ((SMALL_height - $height) * 100) / $height;// находим процент растягивания картинки (высота)
+                    $widthRESIZE = (int)((($width / 100) * $interest) + $width); // находим новые размеры и приводим их в инт (ширина)
+                    $heightRESIZE = (int)((($height / 100) * $interest) + $height);// находим новые размеры и приводим их в инт (высота)	
+                	}
+            	}
+            if ( $height < $width  )
             {
-            	$interest = (SMALL_width * 100) / $width; // находим процент сжатия картинки если она шире
+            	if ( $width > 260 )
+            		{             	
+            		$interest = (SMALL_width * 100) / $width; // находим процент сжатия картинки если она шире
+            	    $widthRESIZE = (int)(($width / 100) * $interest) ; // находим новые размеры и приводим их в инт (ширина)
+                    $heightRESIZE = (int)(($height / 100) * $interest);// находим новые размеры и приводим их в инт (высота) 
+                    } 
+                if ( $width  < 260 )
+                	{
+                	$interest =  ((SMALL_height - $width) * 100) / $width;// находим процент растягивания картинки (высота)
+                    $widthRESIZE = (int)((($width / 100) * $interest) + $width); // находим новые размеры и приводим их в инт (ширина)
+                    $heightRESIZE = (int)((($height / 100) * $interest) + $height);// находим новые размеры и приводим их в инт (высота)	
+                	}
+            }
+            if ( $height == $width )
+            {
+            	if ( $height > 260 )
+            	{
+                $interest = (SMALL_width * 100) / $width; // находим процент сжатия картинки если она шире
             	$widthRESIZE = (int)(($width / 100) * $interest) ; // находим новые размеры и приводим их в инт (ширина)
                 $heightRESIZE = (int)(($height / 100) * $interest);// находим новые размеры и приводим их в инт (высота)
+            	}
+                if ( $height < 260 )
+                {
+	            $interest =  ((SMALL_height - $height) * 100) / $height;// находим процент растягивания картинки (высота)
+                $widthRESIZE = (int)((($width / 100) * $interest) + $width); // находим новые размеры и приводим их в инт (ширина)
+                $heightRESIZE = (int)((($height / 100) * $interest) + $height);// находим новые размеры и приводим их в инт (высота)	
+                }
             }
-            elseif ( $height > SMALL_height)
-            {
-            	$interest = (SMALL_height * 100) / $height;// находим процент сжатия картинки если она выше
-            	$widthRESIZE = (int)(($width / 100) * $interest) ; // находим новые размеры и приводим их в инт (ширина)
-                $heightRESIZE = (int)(($height / 100) * $interest);// находим новые размеры и приводим их в инт (высота)
-            } 
 
-            elseif ( $height < SMALL_height)
+            if ( $height == 260 && $width ==260 )
             {
-            $interest =  ((SMALL_height - $height) * 100) / $height;// находим процент растягивания картинки (высота)
-            $widthRESIZE = (int)((($width / 100) * $interest) + $width); // находим новые размеры и приводим их в инт (ширина)
-            $heightRESIZE = (int)((($height / 100) * $interest) + $height);// находим новые размеры и приводим их в инт (высота)
-            } 
-
-            elseif ( $width < SMALL_width)
-            {
-            $interest =  ((SMALL_width - $width) * 100) / $width;// находим процент растягивания картинки (ширина)
-            $widthRESIZE = (int)((($width / 100) * $interest) + $width); // находим новые размеры и приводим их в инт (ширина)
-            $heightRESIZE = (int)((($height / 100) * $interest) + $height);// находим новые размеры и приводим их в инт (высота)
+            imagejpeg($imgPOST,$uploadfile);
             }
+            else
+            {
             $coordX = (SMALL_height - $heightRESIZE) / 2; // координаты картинки по x
             $coordY = (SMALL_width - $widthRESIZE) / 2; // координаты по оси y
-            echo $widthRESIZE,"/";
-            echo $heightRESIZE;
-        if(imagecopyresampled($img200,$imgPOST,0,0,0,0,$widthRESIZE,$heightRESIZE,$width,$height))
+        if(imagecopyresampled($imgRES,$imgPOST,$coordY,$coordX,0,0,$widthRESIZE,$heightRESIZE,$width,$height))
         {
-        	//imagejpeg($img200);
-			/* if (imagegd($img200,$uploadfile)) 
-			    {
-                echo "Файл корректен и был успешно загружен.\n";
-                } 
-            */
+        	imagejpeg($imgRES,$uploadfile);
+        	include_once "libs/rb.php";//подключаем rb.php
+            require_once "setting.php";//подключаем файл с настройками setting.php
+            require_once "db.php";// коннект ту датабейз 
+            $user = R::findOne('users', 'id = ?', array($_SESSION['id']));
+            $user->photo = $randomname . ".jpg";
+            R::store($user);
         }
+            }
 	}
 
 }

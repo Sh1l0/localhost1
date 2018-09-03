@@ -12,7 +12,7 @@ require_once "db.php";// коннект ту датабейз
 <div class='page' style="min-height: 850">
 
 	<div class="flown">
-		<form enctype="multipart/form-data" action="PostPhotoSCR" method="POST">
+		<form enctype="multipart/form-data" action="" method="POST">
    		 <input type="hidden" name="MAX_FILE_SIZE" value="400000" />
    		 <input name="userfile" type="file" accept="image/jpeg"/>
    		 <br>
@@ -23,7 +23,7 @@ require_once "db.php";// коннект ту датабейз
 	</div>
 
 	<div style="display: inline-block; position: relative;">
-		<img src='/img/images.png' width="250"; height="250" class="profPhoto"/>
+		<img src='<?php $user = R::findOne('users', 'id = ?', array($_SESSION['id'])); echo "http://localhost/POSTPHOTO/". $user->photo; ?>' width="250"; height="250" class="profPhoto"/>
 		<div class="changePhoto">Сменить фото</div>
 
 

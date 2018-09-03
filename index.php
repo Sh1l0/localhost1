@@ -1,11 +1,12 @@
 <?php 
 session_start();
-/*if(isset($_FILES['userfile']['size']))
+if(isset($_FILES['userfile']['size']) && isset($_SESSION['user']))
 {
 header('Content-Type: image/jpeg');
 include "parts/PostPhotoSCR.php";
+header('Location: http://localhost/profile');
 }
-*/
+
 if($ind==0)
 {
 ?>
@@ -55,10 +56,7 @@ case 'registerSCR':
         break;
 case 'profile':
         include  "pages/profile.php"; 
-        break;   
-case 'PostPhotoSCR':
-        include  "parts/PostPhotoSCR.php"; 
-        break;  
+        break;    
 case 'exit':
         include  "parts/exit.php"; 
         break;  
