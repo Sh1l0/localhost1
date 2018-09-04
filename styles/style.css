@@ -89,7 +89,7 @@ div.nav-panel{
 	overflow:hidden;
 	white-space:nowrap;
 	border-color: #252525;
-	z-index: 99999;
+	box-shadow: 1px 1px 1px  #252525;
 	margin-top:0;
 	background-color:#252525;
 	text-align: center;
@@ -205,25 +205,14 @@ div.more{
 a{
 	text-decoration: none;
 }
-.loginButton{
-	
-	position: relative;
-	height: 43px;
-	cursor: pointer;
-	width: 100%;
-	background-color: #e24f43;
-	padding-top: 15px;
-}
-.loginButton:hover{
-	background-color: #f25f53;
-}
+
 .login{
 	box-shadow: 1px 1px 2px #252525;
-	
+	padding-top: 100px;
 	display: none;
 	position: relative;
 	left:71.2%;
-	top:-75px;
+	top:-100px;
 	width: 23.34%;
 	border-color: #252525;
 	padding-bottom: 1%;
@@ -232,7 +221,6 @@ a{
 	background-color:#e24f43;
 	text-align: center;
 	list-style-type: none;
-	z-index: 9999999;
 
 }
 .login input{
@@ -389,7 +377,7 @@ input:hover{
 	background-color: #e24f43;
 	text-align: left;
 	top: 20px;
-	
+	z-index: -1;
 
 	
 }
@@ -402,7 +390,7 @@ input:hover{
 	width:633px;
 	text-align: center;
 	background-color: #d1d1d1;
-
+	z-index:-1;
 
 }
 .view button{
@@ -629,7 +617,7 @@ input:hover{
 
 #oB{
 	cursor: pointer;
-	background-color: #e24f43;
+	background-color: #252525;
 	margin-left:20px;
 }
 #publications{
