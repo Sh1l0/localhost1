@@ -1,6 +1,6 @@
 <?php
 $data=$_POST;
-require_once '/parts/loginSCR.php';
+require_once 'parts/loginSCR.php';
 if(isset($data['do_login']))
 {
   verifySignUp($data);
