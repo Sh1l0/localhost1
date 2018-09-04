@@ -6,7 +6,7 @@ do
 $randomname = substr(str_shuffle('qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGJKLZXCVBNM1234567890_-'),0,13);
 }
 while(file_exists($randomname.".jpg"));
-$uploaddir = 'C:\Users\USER\Desktop\site\localhost\POSTPHOTO/';
+$uploaddir = 'POSTPHOTO/';
 $uploadfile = $uploaddir . $randomname . ".jpg";
 if($_FILES['userfile']['size']<400000 && $_FILES['userfile']['size']!=0)
 {
