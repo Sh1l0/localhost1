@@ -73,7 +73,6 @@ case 'interesting':
         include "pages/interesting.php";
         break;
 case 'guides':
-        
         include "pages/guides.php";
         break;
 default:
@@ -83,9 +82,9 @@ default:
 }
 if($ind == 0)
 {
-
+    echo '<body>';
 include "pages/nav.php";
-
+echo '</body>';
 }
 }
 ?>
