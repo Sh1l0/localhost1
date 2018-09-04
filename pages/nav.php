@@ -11,7 +11,6 @@ verifySignUp($data);
 
   <div style="overflow: visible; position: fixed; width: 1540px; height: 57px; left: 50%; margin-left: -770px; top:0;">
 	<div class="nav-panel">
-    <img src="img/logo.png" width="94" height="40" style="vertical-align: middle;">
 	<a href="http://localhost/"> <div >Новости</div></a>
 	<a href="store"> <div>Товары</div></a>
 	<a href="interesting"> <div >Интересное</div></a>
@@ -30,8 +29,8 @@ verifySignUp($data);
     else{
        
 ?><div id ="log"> Авторизироваться</div>
-
 </div>
+
 <ul>
   <form name="login" method="post" class = "login" action="">
   <li>Логин:
@@ -50,7 +49,6 @@ verifySignUp($data);
 ?>
 
 </ul>  
-
 </div>
     <?php
               }

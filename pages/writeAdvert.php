@@ -36,7 +36,7 @@
 		<option value="3">Статья</option>
 		<option value="4">Анекдот</option>
 	</select>
-	<select form="writeText" selected value="Выберите тип товара" style="display: none; border: 2px solid #757575;" id="selectType">
+	<select form="writeText" selected value="Выберите тип товара" style="display: none; border: 2px solid #f39c12;" id="selectType">
 		<option disabled selected value="Выберите тип товара">Выберите тип товара</option>
 		<option  value="coil">Намотка</option>
 		<option value="plate">плата</option>

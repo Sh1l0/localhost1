@@ -13,13 +13,13 @@
 				<a href=""><div id="l1">Ахуенная статья 5</div></a>
 			
 		</div>
-		<div>Опрос
+		<div style="background-color: #27ae60">Опрос
 				<a ><div id="ask" style="text-align:center;">Название опроса</div></a>
 				<a ><div id="ask" ">|||||||||||</div></a>
 				<a ><div id="ask">||||||</div></a>
 				
 		</div>
-		<div style="padding: 0px;">ТОП активных пользователей
+		<div style="background-color: #e24f43; padding: 0px;">ТОП активных пользователей
 				<a href=""><div id="l1""><img src="http://nsk.ukrbb.net/images/avatars/upload/nsk_ukrbb_net/c142221d528ebb74568a4013d1829b09_82.jpg?1213860571" width="26" height="26">Донатер 1</div></a>
 				<a href=""><div id="l2"><img src="http://nsk.ukrbb.net/images/avatars/upload/nsk_ukrbb_net/c142221d528ebb74568a4013d1829b09_82.jpg?1213860571" width="26" height="26">Донатер 2</div></a>
 				<a href=""><div id="l1"><img src="http://nsk.ukrbb.net/images/avatars/upload/nsk_ukrbb_net/c142221d528ebb74568a4013d1829b09_82.jpg?1213860571" width="26" height="26">Хуила Чмо</div></a>
@@ -45,7 +45,11 @@ for($id = 1; $id <= R::Count('news')+$Count; $id++)  // Узнаем колли�
 
 <div class = "news shadow">
 	
-	<div class="title" >  
+	<div <?php  
+	if($color==0){echo "class = 'title0'";}
+	elseif($color==1){echo "class = 'title1'";}
+	elseif($color==2){echo "class = 'title2'";}
+	?> >  
 
                                             <?php 
                                             $News = R::load('news', $id);
@@ -76,7 +80,10 @@ for($id = 1; $id <= R::Count('news')+$Count; $id++)  // Узнаем колли�
 	
 	</div>
 
-	<div class="more">
+	<div <?php 	if($color==0){echo "class = 'more more0'";}
+	elseif($color==1){echo "class = 'more more1'";}
+	elseif($color==2){echo "class = 'more more2'";}
+	?>>
 	<img src="../img/more.png" width="88" height="44"></div>
 	
 </div>

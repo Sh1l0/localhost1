@@ -7,7 +7,6 @@ $(document).ready(()=>{
 		$('.oB').fadeIn(200);
 		$('.Pubs').fadeOut(200);
 		$('.liked').fadeOut(200);
-
 		
 	});
 		$('#publications').on('click', event =>{
@@ -24,9 +23,7 @@ $(document).ready(()=>{
 			$('.flown').fadeIn(200);
 			$('#backgr').fadeIn(200);
 		});
-	$('#backgr').on('click', () =>{
+});		$('#backgr').on('click', () =>{
 			$('.flown').fadeOut(200);
 			$('#backgr').fadeOut(200);
 });
-
-});	
