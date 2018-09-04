@@ -4,7 +4,7 @@
 <div class="page" style="min-height: 800px;">
 	<div class= "left shadow" style="width:250px;">
 		
-		<div style="background-color: #e24f43; padding: 0px;">ТОП объявлений
+		<div style=" padding: 0px;">ТОП объявлений
 				<a href=""><div id="l1""><img src="http://nsk.ukrbb.net/images/avatars/upload/nsk_ukrbb_net/c142221d528ebb74568a4013d1829b09_82.jpg?1213860571" width="26" height="26">объява 1</div></a>
 				<a href=""><div id="l2"><img src="http://nsk.ukrbb.net/images/avatars/upload/nsk_ukrbb_net/c142221d528ebb74568a4013d1829b09_82.jpg?1213860571" width="26" height="26">объява 2</div></a>
 				<a href=""><div id="l1"><img src="http://nsk.ukrbb.net/images/avatars/upload/nsk_ukrbb_net/c142221d528ebb74568a4013d1829b09_82.jpg?1213860571" width="26" height="26">объява Чмо</div></a>

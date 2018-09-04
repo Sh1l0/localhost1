@@ -72,17 +72,17 @@ require_once "db.php";// коннект ту датабейз
 
 		</table>
 		<table class="Pubs">
-			<tr id="headPubs"><th>Дата</th><th id="centralPubs1">Заголовок</th><th id="rightPubs">Просмотры/Комментарии</th></tr>
-			<tr id="Pubs2"><th>27.92.1992</th><th id="centralPubs2">Заголовок</th><th id="rightPubs">Просмотры/Комментарии</th></tr>
-			<tr id="Pubs3"><th>27.92.1992</th><th id="centralPubs3">Заголовок</th><th id="rightPubs">Просмотры/Комментарии</th></tr>
+			<tr id="headoB"><th>Дата</th><th id="central1">Заголовок</th><th id="right">Просмотры/Комментарии</th></tr>
+			<tr id="oB2"><th>27.92.1992</th><th id="central2">Заголовок</th><th id="right">Просмотры/Комментарии</th></tr>
+			<tr id="oB3"><th>27.92.1992</th><th id="central3">Заголовок</th><th id="right">Просмотры/Комментарии</th></tr>
 		</table>
 
 
 
 		<table class="liked"> <!-- здесь что-то типо php цикла с выводом целой строки таблицы-->
-			<tr id="headliked"><th>Дата</th><th id="centralliked">Заголовок</th><th id="rightPubs">Просмотры/Комментарии</th></tr>
-			<tr id="liked2"><th>27.92.1992</th><th id="centralliked2">Заголовок</th><th id="rightliked">Просмотры/Комментарии</th></tr>
-			<tr id="liked3"><th>27.92.1992</th><th id="centralliked3">Заголовок</th><th id="rightliked">Просмотры/Комментарии</th></tr>
+			<tr id="headoB"><th>Дата</th><th id="central1">Заголовок</th><th id="right">Просмотры/Комментарии</th></tr>
+			<tr id="oB2"><th>27.92.1992</th><th id="central2">Заголовок</th><th id="right">Просмотры/Комментарии</th></tr>
+			<tr id="oB3"><th>27.92.1992</th><th id="central3">Заголовок</th><th id="right">Просмотры/Комментарии</th></tr>
 		</table>
 		
 	</div>
