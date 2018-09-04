@@ -1,0 +1,23 @@
+RewriteEngine on
+RewriteBase /
+Options All -Indexes
+RewriteCond %{REQUEST_FILENAME} -s [OR]
+RewriteCond %{REQUEST_FILENAME} -l [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^libs/(.*)$ libs/$1 [L]
+RewriteRule ^styles/(.*)$ styles/$1 [L]
+RewriteRule ^PhotoNews/(.*)$ PhotoNews/$1 [L]
+RewriteRule ^POSTPHOTO/(.*)$ POSTPHOTO/$1 [L]
+RewriteRule ^img/(.*)$ img/$1 [L]
+RewriteRule ^.*$ [NC,L]
+RewriteRule ^.*$ index.php [NC,L]
+AddDefaultCharset utf-8
+AddType 'text/html; charset=utf-8' .html .htm .shtml
+ErrorDocument 403 http://localhost/404
+AddType application/x-httpd-php .js
+AddHandler x-httpd-php5 .js
+
+<FilesMatch "\.(js|php)$">
+SetHandler application/x-httpd-php
+</FilesMatch>
+
