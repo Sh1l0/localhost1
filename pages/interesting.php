@@ -21,11 +21,14 @@
 	</form></div>
 	<div id="coolPubs2">
 		<?php
-		for($id = 1; $id <= R::Count('news')+$Count; $id++)  // Узнаем колличество статей в базе данных и пока i <= этому числу выполняем код i = i + 3;
+		include_once "libs/rb.php";//подключаем rb.php
+        require_once "setting.php";//подключаем файл с настройками setting.php
+        require_once "db.php";// коннект ту датабейз 
+		for($id = 1; $id <= R::Count('interesting')+$Count; $id++)  // Узнаем колличество статей в базе данных и пока i <= этому числу выполняем код i = i + 3;
 {
 		if( R::count('news','id = ?', array($id)) == 0)
 		{$id++; $Count++;}
-	    $interesting = R::load('news', $id);
+	    $interesting = R::load('interesting', $id);
 ?>
 		<div>
 			<span class="content3"><span><?php echo $interesting->title; ?></span><br><img src="><?php echo $interesting->photo; ?>" align="left">><?php echo $interesting->shorttext; ?></span>
