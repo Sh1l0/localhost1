@@ -31,22 +31,11 @@
 	    $interesting = R::load('interesting', $id);
 ?>
 		<div>
-			<span class="content3"><span><?php echo $interesting->title; ?></span><br><img src="><?php echo $interesting->photo; ?>" align="left">><?php echo $interesting->shorttext; ?></span>
+			<span class="content3"><span><?php echo $interesting->title; ?></span><br><img src="<?php echo $interesting->photo; ?>" align="left"><?php echo $interesting->shorttext; ?></span>
 		</div>
 <?php
 } 
 ?>
-		<!--
-		<div>
-			<span class="content3"><span>dzvzxcv</span><br><img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916" align="left">asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span>
-		</div>
-		<div>
-			<span class="content3"><span>dzvzxcv</span><br><img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916" align="left">asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span>
-		</div>
-		<div>
-			<span class="content3"><span>dzvzxcv</span><br><img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916" align="left">asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span>
-		</div>
-		-->
 	</div>
 	</div>
 </body>
