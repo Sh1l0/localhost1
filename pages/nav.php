@@ -1,3 +1,4 @@
+<body>
 <?php
 include_once 'parts/loginSCR.php';
 $data=$_POST;
@@ -19,7 +20,7 @@ verifySignUp($data);
  if(isset($_SESSION['user'])) 
   {
 
-   ?> <a href="profile"><div id ="log"><img src="<?php $user = R::findOne('users', 'id = ?', array($_SESSION['id'])); echo "http://localhost/POSTPHOTO/". $user->photo; ?>" style="width: 30; heidth:30; vertical-align:middle; border: 2px solid #e24f43"> <?php echo $_SESSION['login']; ?></div></a>
+   ?> <a href="profile" ><div id ="log"><img src="<?php $user = R::findOne('users', 'id = ?', array($_SESSION['id'])); echo "http://localhost/POSTPHOTO/". $user->photo; ?>" style="width: 30; heidth:30; vertical-align:middle; border: 2px solid #e24f43"> <?php echo $_SESSION['login']; ?></div></a>
    <a href="exit"><div style="padding-right: 5px; padding-left: 5px;"  id="exit"><img src="/img/exit.png" width="40" height="40" style="vertical-align: middle;"></div></a>
   </div>
 
@@ -62,7 +63,7 @@ verifySignUp($data);
 
 
 <script src ="/libs/nav.js"></script>
-
+</body>
 
 
 
