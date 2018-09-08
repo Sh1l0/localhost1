@@ -28,7 +28,8 @@
 	<div id='coolPubs'>
 		<div>
 			<img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916">
-		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span></div>
+		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span><button>Посмотреть</button></div>
+		 
 		 <div>
 			<img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916">
 		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span></div>
