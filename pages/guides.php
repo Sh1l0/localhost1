@@ -26,20 +26,22 @@
 	</form></div>
 	
 	<div id='coolPubs'>
+		<?php
+		include_once "libs/rb.php";//подключаем rb.php
+        require_once "setting.php";//подключаем файл с настройками setting.php
+        require_once "db.php";// коннект ту датабейз 
+		for($id = 1; $id <= R::Count('guides')+$Count; $id++)  // Узнаем колличество статей в базе данных и пока i <= этому числу выполняем код i = i + 3;
+{
+		if( R::count('guides','id = ?', array($id)) == 0)
+		{$id++; $Count++;}
+	    $guides = R::load('guides', $id);
+?>
 		<div>
-			<img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916">
-		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span><button>Посмотреть</button></div>
-		 
-		 <div>
-			<img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916">
-		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span></div>
-		 <div>
-			<img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916">
-		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span></div>
-		 <div>
-			<img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916">
-		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span></div>
-		
+			<img src="<?php echo $guides->photo; ?>">
+		 <span class="content2"><span><?php echo $guides->title; ?></span><br><?php echo $guides->text; ?></span><button>Посмотреть</button></div>
+<?php
+} 
+?>
 	</div>
 	</div>
 </body>

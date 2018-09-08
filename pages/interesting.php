@@ -26,7 +26,7 @@
         require_once "db.php";// коннект ту датабейз 
 		for($id = 1; $id <= R::Count('interesting')+$Count; $id++)  // Узнаем колличество статей в базе данных и пока i <= этому числу выполняем код i = i + 3;
 {
-		if( R::count('news','id = ?', array($id)) == 0)
+		if( R::count('interesting','id = ?', array($id)) == 0)
 		{$id++; $Count++;}
 	    $interesting = R::load('interesting', $id);
 ?>
