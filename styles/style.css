@@ -479,7 +479,8 @@ input:hover{
 	display: none;
 	margin-left: 931px;
 	width: 262px;
-	
+	top:130;
+	position: absolute;
 	background-color: #ffffff;
 	padding-top: 10px;
 	font-size: 20px;
