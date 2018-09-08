@@ -10,7 +10,7 @@
 <body>
 <div class="page" style="min-height: 850">
 	
-<form id="writeText">
+<form id="writeText" method="post" action="PostAdv">
 	<div id="headerWrite">
 	Название<br><input type="text" name="titleText" placeholder="Введите название статьи/гайда/объявления">
 </div>
