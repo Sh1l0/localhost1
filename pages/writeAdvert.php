@@ -1,3 +1,11 @@
+<?php
+$data=$_POST;
+require_once 'parts/PostAdvertSCR.php';
+if(isset($data['writeThis']))
+{
+  verifyPostAdvert($data);
+}
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -10,7 +18,7 @@
 <body>
 <div class="page" style="min-height: 850">
 	
-<form id="writeText" method="post" action="PostAdv">
+<form id="writeText" method="post" action="">
 	<div id="headerWrite">
 	Название<br><input type="text" name="titleText" placeholder="Введите название статьи/гайда/объявления">
 </div>
