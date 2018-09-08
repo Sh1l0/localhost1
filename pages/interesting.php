@@ -1,5 +1,5 @@
 <body>
-	<div class="page" style="min-height: 800px;">
+	<div class="page" style="min-height: 850">
 		<div class="categotyChanger">
 			<button>Всё</button><button>Статьи</button><button>Анекдоты</button><button>Истории</button><button>Обзоры</button>
 

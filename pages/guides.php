@@ -1,4 +1,9 @@
 <body>
+	<?php
+		include_once "libs/rb.php";//подключаем rb.php
+        require_once "setting.php";//подключаем файл с настройками setting.php
+        require_once "db.php";// коннект ту датабейз 
+	?>
 	<div class="page" style="min-height: 800px;">
 		<div class="categotyChanger1">
 			<button>От создателей</button><button>Последние</button>
@@ -23,7 +28,8 @@
 	<div id='coolPubs'>
 		<div>
 			<img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916">
-		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span></div>
+		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span><button>Посмотреть</button></div>
+		 
 		 <div>
 			<img src="https://cdn3.volusion.com/myrsg.dceqt/v/vspfiles/photos/SLVASK-2.jpg?1530271916">
 		 <span class="content2"><span>dzvzxcv</span><br>asdasda dfsjd asjfis jdsfsiodfjasiodf f aidhf asid fhais dfhiasdhf oias dhfiuas dhfioaus dhf oasdfha isdf eidja oif jasdo3ifjds okfjasdk lfjkasdljfaskdlfjasdf iasud hf asjdhfasd ljf hlasd flsdfll dajsld sal dfgds fhghjkasdgfjhsd gjhasdgsd sdasdasd</span></div>
