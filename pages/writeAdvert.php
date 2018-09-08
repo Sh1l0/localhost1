@@ -1,11 +1,3 @@
-<?php
-$data=$_POST;
-require_once 'parts/PostAdvertSCR.php';
-if(isset($data['writeThis']))
-{
-  verifyPostAdvert($data);
-}
-?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -59,7 +51,14 @@ if(isset($data['writeThis']))
 	</select>
 	<br><input type="submit" name="writeThis" class="submitWriting" value="Опубликовать">
 </form>
-
 </div>
+<?php
+$data=$_POST;
+require_once 'parts/PostAdvertSCR.php';
+if(isset($data['writeThis']))
+{
+  verifyPostAdvert($data);
+}
+?>
 </body>
 </html>
