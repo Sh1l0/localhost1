@@ -390,6 +390,7 @@ input:hover{
 	background-color: #e24f43;
 	text-align: left;
 	top: 20px;
+	margin-bottom: 60px;
 	
 
 	
@@ -1019,4 +1020,14 @@ position: relative;
 	width: 320px;
 	text-align: center;
 	padding-bottom: 10px;
+}
+.storeSubjects{
+	margin-top: 20px;
+	width: 633px;
+	position: relative;
+	margin-left: 285px;
+	padding-bottom: 10px;
+	top:20px;
+	background-color: #f1f1f1;
+    overflow: visible;
 }

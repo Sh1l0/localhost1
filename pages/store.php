@@ -29,6 +29,55 @@
 		<input type="submit" name="search"  value=" " id="search">
 	</form></div>
 	
+<div class="storeSubjects shadow">
+	<div class="title" >  title
+	</div>
+
+
+	<div id ="switcb1">
+
+		<div id ="newsPhoto" >
+	<img  src="<?php echo $News->photo;?>" style="height: 200px; width: 200px; margin-left: 6px; margin-top: 6px; "> <!-- Было $NewsTitle->photo -->
+		</div>
+	
+		<div class ="content" id = "short" >
+	 		Sample text
+		</div>	
+	</div>
+</div>
+<div class="storeSubjects shadow">
+	<div class="title" >  title
+	</div>
+
+
+	<div id ="switcb1">
+
+		<div id ="newsPhoto" >
+	<img  src="<?php echo $News->photo;?>" style="height: 200px; width: 200px; margin-left: 6px; margin-top: 6px; "> <!-- Было $NewsTitle->photo -->
+		</div>
+	
+		<div class ="content" id = "short" >
+	 		Sample text
+		</div>	
+	</div>
+</div>
+<div class="storeSubjects shadow">
+	<div class="title" >  title
+	</div>
+
+
+	<div id ="switcb1">
+
+		<div id ="newsPhoto" >
+	<img  src="<?php echo $News->photo;?>" style="height: 200px; width: 200px; margin-left: 6px; margin-top: 6px; "> <!-- Было $NewsTitle->photo -->
+		</div>
+	
+		<div class ="content" id = "short" >
+	 		Sample text
+		</div>	
+	</div>
+</div>
+
 
 
 
