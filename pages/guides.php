@@ -38,7 +38,7 @@
 ?>
 		<div>
 			<img src="<?php echo $guides->photo; ?>">
-		 <span class="content2"><span><?php echo $guides->title; ?></span><br><?php echo $guides->text; ?></span><button>Посмотреть</button></div>
+		 <span class="content2"><span><?php echo $guides->title; ?></span><br><?php echo $guides->text; ?></span><a href="fullRead"><button>Посмотреть</button></a></div>
 <?php
 } 
 ?>

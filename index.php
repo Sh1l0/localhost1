@@ -85,6 +85,7 @@ if($ind == 0)
 {
     echo '<body>';
 include "pages/nav.php";
+include 'pages/footer.php';
 echo '</body>';
 }
 }

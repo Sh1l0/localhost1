@@ -174,7 +174,7 @@ div.news{
 	position: relative;
 	margin-left: 355px;
 	padding-bottom: 10px;
-	top:20px;
+	
 	background-color: #f1f1f1;
     overflow: visible;
 }
@@ -189,18 +189,21 @@ div.title{
 }
 
 div.more{
-	height: 44px;
-	width: 88px;
+	height: 34px;
+	width: 150px;
 	text-align: center;
 	color:#ffffff;
-	font-size: 20px;
+	font-size: 25px;
 	margin: auto;
 	border-radius: 5px;
 	cursor:pointer;
 	bottom: 10px;
 	background-color:#e24f43;
+	padding-top: 5px
 }
-
+.more:hover{
+	background-color: #f25f53; 
+	}
 
 
 a{
@@ -777,7 +780,7 @@ input:hover{
 }
 .flown{
 	width: 500px;
-	height: 500px;
+	height: 320px;
 	position: fixed;
 	top:0;
 	left: 0;
@@ -933,14 +936,32 @@ select{
 
 }
 #coolPubs button{
-	position: absolute;
-	top: 110px;
-	left:530;
-	height: 40px;
-	width: 150px;
+	position: relative;
+	margin-top: -40px;
+	left:360px;
+	height: 30px;
+	font-size: 15px;
+	width: 100px;
 	color:#ffffff;
+	border-radius: 5px;
 	background-color: #e24f43;
 	border: 1px solid #e24f43;
+}
+#fullReadBut{
+
+	margin-top: 80px;
+	margin-left:115px;
+	height: 30px;
+	font-size: 15px;
+	width: 100px;
+	color:#ffffff;
+	border-radius: 5px;
+	background-color: #e24f43;
+	border: 1px solid #e24f43;
+}
+#fullReadBut:hover{
+	cursor: pointer;
+	background-color:#f25f53;
 }
 #coolPubs button:hover{
 	background-color: #f25f53;
@@ -1092,4 +1113,27 @@ position: relative;
 	width: 860px;
 	min-height: 300px;
 	background-color: #ffffff;
+}
+footer {
+	margin:auto;
+	background-color: #252525;
+	color: #ffffff;
+	font-size: 25px;
+	text-align: center;
+	margin-top: -20px;
+	width:1216px;
+
+}
+footer ul li{
+	padding:10px;
+	margin-right: 20px;
+	margin-left:  20px;
+	display: inline-block;
+}
+#loaded{
+	position: absolute;
+	color: #27ae60;
+	margin-left: 100px;
+	padding-top: 100px;
+	font-size: 30px;
 }

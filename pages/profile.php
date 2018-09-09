@@ -7,17 +7,36 @@ require_once "db.php";// коннект ту датабейз
 
 <!DOCTYPE html>
 <html>
-<body>
-	
-<div class='page' style="min-height: 850">
 
+	
+
+
+<body>
+<div class='page' style="min-height: 850">
+<script type="text/javascript">
+		 function foo() {
+        var f = document.getElementById("files");
+        if(f.value != "")
+        {
+ 			$("#loadf").hide();
+ 			$("#loaded").show();
+					
+        	        }
+    }
+
+</script>
 	<div class="flown">
 		<form enctype="multipart/form-data" action="" method="POST">
-   		 <input type="hidden" name="MAX_FILE_SIZE" value="400000" />
-   		 <input name="userfile" type="file" accept="image/jpeg"/>
+   		 <input  type="hidden" name="MAX_FILE_SIZE" value="400000" />
+   		 <div>
+   		 <label id = "loadf" for="files">+</label>
+   		 <label id = "loaded" for="files" style="display: none;">Картинка выбрана</label>
+   		</div>
+   		<input id="files" style="visibility: hidden;" name="userfile" type="file" accept="image/jpeg" onchange="foo()" />
    		 <br>
-   		 <input type="submit" value="Отправить файл" />
+   		 <input id="sendfoto" type="submit" value="Отправить файл" />
 		</form>
+		
 	</div>
 	<div id="backgr">
 	</div>

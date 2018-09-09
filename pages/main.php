@@ -69,14 +69,12 @@ for($id = 1; $id <= R::Count('news')+$Count; $id++)  // Узнаем колли�
 	 		</script>
 		</div>
 	 	
-	 	<div class ="content" id = "full">
-		<?php echo $News->text; ?>
-		</div>
+	 	
 	
 	</div>
 
-	<div class="more">
-	<img src="../img/more.png" width="88" height="44"></div>
+	<a href = "fullRead"> <div class="more">
+	Читать</div></a>
 	
 </div>
 <?php 

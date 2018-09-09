@@ -1,4 +1,6 @@
 $(document).ready(()=>{
+		
+	
 	var profileSwitcher = false;
 	var oBOn=false;
 	var pubsOn=false;
