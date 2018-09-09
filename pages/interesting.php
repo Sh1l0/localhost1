@@ -31,7 +31,7 @@
 	    $interesting = R::load('interesting', $id);
 ?>
 		<div>
-			<span class="content3"><span><?php echo $interesting->title; ?></span><br><img src="<?php echo $interesting->photo; ?>" align="left"><?php echo $interesting->shorttext; ?></span><a href="fullRead"><button id="fullReadBut">Посмотреть</button></a>
+			<span class="content3"><span><?php echo $interesting->title; ?></span><br><img src="<?php echo $interesting->photo; ?>" align="left"><?php echo $interesting->shorttext; ?></span><a href="fullRead<?php echo "?id=".$interesting->id."&type=interesting";?>"><button id="fullReadBut">Посмотреть</button></a>
 		</div>
 <?php
 } 

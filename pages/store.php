@@ -28,89 +28,32 @@
 		<input type="text" name="search" placeholder="Испарятор 3000"style="box-shadow:  3px 5px 10px grey inset; border: 0px;">
 		<input type="submit" name="search"  value=" " id="search">
 	</form></div>
-	
+<?php	
+for($id = 1; $id <= R::Count('ads')+$Count; $id++)  // Узнаем колличество статей в базе данных и пока i <= этому числу выполняем код i = i + 3;
+{
+		if( R::count('ads','id = ?', array($id)) == 0)
+		{$id++; $Count++;}
+	    $ads = R::load('ads', $id);
+?>
 <div class="storeSubjects shadow">
-	<div class="title" >  title
+	<div class="title" >  <?php echo $ads->title; ?>
 	</div>
 
 
 	<div id ="switcb1">
 
 		<div id ="newsPhoto" >
-	<img  src="<?php echo $News->photo;?>" style="height: 200px; width: 200px; margin-left: 6px; margin-top: 6px; "> <!-- Было $NewsTitle->photo -->
+	<img  src="<?php echo $ads->photo;?>" style="height: 200px; width: 200px; margin-left: 6px; margin-top: 6px; "> <!-- Было $NewsTitle->photo -->
 		</div>
 	
 		<div class ="content" id = "short" >
-	 		Sample text
+	 		<?php echo $ads->description; ?>
 		</div>	
 	</div>
 </div>
-<div class="storeSubjects shadow">
-	<div class="title" >  title
-	</div>
-
-
-	<div id ="switcb1">
-
-		<div id ="newsPhoto" >
-	<img  src="<?php echo $News->photo;?>" style="height: 200px; width: 200px; margin-left: 6px; margin-top: 6px; "> <!-- Было $NewsTitle->photo -->
-		</div>
-	
-		<div class ="content" id = "short" >
-	 		Sample text
-		</div>	
-	</div>
-</div>
-<div class="storeSubjects shadow">
-	<div class="title" >  title
-	</div>
-
-
-	<div id ="switcb1">
-
-		<div id ="newsPhoto" >
-	<img  src="<?php echo $News->photo;?>" style="height: 200px; width: 200px; margin-left: 6px; margin-top: 6px; "> <!-- Было $NewsTitle->photo -->
-		</div>
-	
-		<div class ="content" id = "short" >
-	 		Sample text
-		</div>	
-	</div>
-</div>
-<div class="storeSubjects shadow">
-	<div class="title" >  title
-	</div>
-
-
-	<div id ="switcb1">
-
-		<div id ="newsPhoto" >
-	<img  src="<?php echo $News->photo;?>" style="height: 200px; width: 200px; margin-left: 6px; margin-top: 6px; "> <!-- Было $NewsTitle->photo -->
-		</div>
-	
-		<div class ="content" id = "short" >
-	 		Sample text
-		</div>	
-	</div>
-</div>
-<div class="storeSubjects shadow">
-	<div class="title" >  title
-	</div>
-
-
-	<div id ="switcb1">
-
-		<div id ="newsPhoto" >
-	<img  src="<?php echo $News->photo;?>" style="height: 200px; width: 200px; margin-left: 6px; margin-top: 6px; "> <!-- Было $NewsTitle->photo -->
-		</div>
-	
-		<div class ="content" id = "short" >
-	 		Sample text
-		</div>	
-	</div>
-</div>
-
-
+<?php
+} 
+?>
 
 
 <div class="filter">Фильтры</div>

@@ -1,6 +1,6 @@
 <?php 
 session_start();
-if(isset($_FILES['userfile']['size']) && isset($_SESSION['user']))
+if(isset($_FILES['userfile']['size']) && isset($_SESSION['user'])&&isset($_POST['postPhotoLK']))
 {
 header('Content-Type: image/jpeg');
 include "parts/PostPhotoSCR.php";

@@ -1,9 +1,4 @@
 <body>
-	<?php
-		include_once "libs/rb.php";//подключаем rb.php
-        require_once "setting.php";//подключаем файл с настройками setting.php
-        require_once "db.php";// коннект ту датабейз 
-	?>
 	<div class="page" style="min-height: 800px;">
 		<div class="categotyChanger1">
 			<button>От создателей</button><button>Последние</button>
@@ -38,7 +33,7 @@
 ?>
 		<div>
 			<img src="<?php echo $guides->photo; ?>">
-		 <span class="content2"><span><?php echo $guides->title; ?></span><br><?php echo $guides->text; ?></span><a href="fullRead"><button>Посмотреть</button></a></div>
+		 <span class="content2"><span><?php echo $guides->title; ?></span><br><?php echo $guides->text; ?></span><a href="fullRead<?php echo "?id=".$guides->id."&type=guides";?>"><button>Посмотреть</button></a></div>
 <?php
 } 
 ?>

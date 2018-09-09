@@ -34,7 +34,7 @@ require_once "db.php";// коннект ту датабейз
    		</div>
    		<input id="files" style="visibility: hidden;" name="userfile" type="file" accept="image/jpeg" onchange="foo()" />
    		 <br>
-   		 <input id="sendfoto" type="submit" value="Отправить файл" />
+   		 <input id="sendfoto" type="submit" value="Отправить файл" name = "postPhotoLK" />
 		</form>
 		
 	</div>

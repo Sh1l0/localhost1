@@ -73,7 +73,7 @@ for($id = 1; $id <= R::Count('news')+$Count; $id++)  // Узнаем колли�
 	
 	</div>
 
-	<a href = "fullRead"> <div class="more">
+	<a href = "fullRead<?php echo "?id=".$News->id."&type=news";?>"> <div class="more">
 	Читать</div></a>
 	
 </div>
