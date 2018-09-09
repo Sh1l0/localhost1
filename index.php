@@ -73,6 +73,9 @@ case 'interesting':
 case 'guides':
         include "pages/guides.php";
         break;
+case 'fullRead':
+        include "pages/fullRead.php";
+        break;
 default:
          include"pages/404.php";
          $ind = 1;
