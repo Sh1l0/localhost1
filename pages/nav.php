@@ -8,7 +8,7 @@ verifySignUp($data);
 ?>
 
 
-  <div style="overflow: visible; position: fixed; width: 1540px; height: 57px; left: 50%; margin-left: -770px; top:0;">
+  <div style="overflow: visible; position: fixed; width: 100%; height: 57px; top:0;">
 	<div class="nav-panel">
     <img src="img/logo.png" width="94" height="40" style="vertical-align: middle;">
 	<a href="http://localhost/"> <div >Новости</div></a>
