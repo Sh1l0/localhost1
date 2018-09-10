@@ -34,6 +34,9 @@ for($id = 1; $id <= R::Count('ads')+$Count; $id++)  // Узнаем коллич
 		if( R::count('ads','id = ?', array($id)) == 0)
 		{$id++; $Count++;}
 	    $ads = R::load('ads', $id);
+	    if($_GET['startPrice'] != ' ' || $_GET['endPrice'] != ' ')
+        if($_GET['startPrice'] <= $ads->price && $_GET['endPrice'] >= $ads->price)
+{
 ?>
 <div class="storeSubjects shadow">
 	<div class="title" >  <?php echo $ads->title; ?>
@@ -52,6 +55,7 @@ for($id = 1; $id <= R::Count('ads')+$Count; $id++)  // Узнаем коллич
 	</div>
 </div>
 <?php
+}
 } 
 ?>
 
