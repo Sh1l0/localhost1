@@ -85,7 +85,6 @@ for($id = 1; $id <= R::Count('ads')+$Count; $id++)  // Узнаем коллич
 
 
 </div>
-
 <script src ="/libs/store.js"></script>
 </body>
 </html>
