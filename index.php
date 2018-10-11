@@ -16,12 +16,9 @@ if($ind==0)
 	<link rel="stylesheet" href="http://localhost/styles/style.css">
 	<script type="text/javascript" src="http://localhost/libs/jquery-3.3.1.min.js"></script>
     <script src="http://localhost/libs/mainfile"></script>
-    
-	<title>Vape.fm</title>
-    
-    <link rel="shortcut icon" href="/img/ico.png" type="image/x-icon">
-	
-</head>
+ 	<title>Vape.fm</title>
+     <link rel="shortcut icon" href="/img/ico.png" type="image/x-icon">
+ </head>
 <body>
  <!-- <audio autoplay>
     <source src="PhotoNews/music.mp3" type="audio/mpeg">
