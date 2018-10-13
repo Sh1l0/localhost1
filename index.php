@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 if(isset($_FILES['userfile']['size']) && isset($_SESSION['user'])&&isset($_POST['postPhotoLK']))
 {
@@ -6,7 +6,6 @@ header('Content-Type: image/jpeg');
 include "parts/PostPhotoSCR.php";
 header('Location: http://localhost/profile');
 }
-
 if($ind==0)
 {
 ?>
@@ -24,10 +23,10 @@ if($ind==0)
     <source src="PhotoNews/music.mp3" type="audio/mpeg">
    </audio>   -->
 </body>
-<?php 
+<?php
 }
 ?>
-<?php 
+<?php
 $ind = 0;
 $URL_Path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $URL_Parts = explode('/', trim($URL_Path, '/'));
@@ -42,21 +41,21 @@ case '':
          include "pages/main.php";
          break;
 case 'register':
-         include "pages/register.php";   
+         include "pages/register.php";
          $ind = 1;
-         break;   
+         break;
 case 'store':
          include "pages/store.php";
-         break;  
+         break;
 case 'registerSCR':
-        include  "parts/registerSCR.php"; 
+        include  "parts/registerSCR.php";
         break;
 case 'profile':
-        include  "pages/profile.php"; 
-        break;    
+        include  "pages/profile.php";
+        break;
 case 'exit':
-        include  "parts/exit.php"; 
-        break;  
+        include  "parts/exit.php";
+        break;
 case 'writeAdvert':
         include "pages/writeAdvert.php";
         break;
