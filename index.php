@@ -9,7 +9,6 @@ header('Location: http://localhost/profile');
 if($ind==0)
 {
 ?>
-
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="http://localhost/styles/style.css">
