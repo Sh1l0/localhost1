@@ -11,9 +11,9 @@ if($ind==0)
 ?>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="http://localhost/styles/style.css">
-	<script type="text/javascript" src="http://localhost/libs/jquery-3.3.1.min.js"></script>
-    <script src="http://localhost/libs/mainfile"></script>
+	<link rel="stylesheet" href="/styles/style.css">
+	<script type="text/javascript" src="/libs/jquery-3.3.1.min.js"></script>
+    <script src="/libs/mainfile"></script>
  	<title>Vape.fm</title>
      <link rel="shortcut icon" href="/img/ico.png" type="image/x-icon">
  </head>
